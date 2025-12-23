@@ -26,7 +26,7 @@ int indexa = 0;
 // ---------- SPEED / POT ----------
 volatile float RPS       = 0.0f;
 volatile float RPS_accel = 0.3f;    // rps^2 
-volatile float rps_max   = 8.33f;
+volatile float rps_max   = 7.2f;
 const float    HYST_RPS  = 0.1f;    // rps hysteresis band
 unsigned long  lastMicros = 0;
 float v_drive_befoverlay = 3.0f;
@@ -282,19 +282,19 @@ void setup() {
 // ---------- LOOP ----------
 void loop() {
   //begin debug printing
-  static unsigned long lastPrintMs = 0;
-  static const unsigned long printIntervalMs = 500;
+  //static unsigned long lastPrintMs = 0;
+ // static const unsigned long printIntervalMs = 500;
   
-  unsigned long nowMs = millis();
-  if (nowMs - lastPrintMs >= printIntervalMs) {
-    lastPrintMs = nowMs;
-    int raw = analogRead(POT_PIN);
-    float norm = (float)raw / 4095.0f;
-    float target = norm * rps_max;
-    Serial.print("Raw pot: "); Serial.print(raw);
-    Serial.print(" Target rps: "); Serial.print(target, 2);
-    Serial.print(" current RPS: "); Serial.println(RPS, 2);
-  }
+//  unsigned long nowMs = millis();
+ // if (nowMs - lastPrintMs >= printIntervalMs) {
+   // lastPrintMs = nowMs;
+   // int raw = analogRead(POT_PIN);
+   // float norm = (float)raw / 4095.0f;
+   // float target = norm * rps_max;
+    //Serial.print("Raw pot: "); Serial.print(raw);
+   // Serial.print(" Target rps: "); Serial.print(target, 2);
+   // Serial.print(" current RPS: "); Serial.println(RPS, 2);
+ // }
 
   //end debug stuff
   //SerialComm();

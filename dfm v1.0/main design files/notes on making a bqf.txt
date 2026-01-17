@@ -1,0 +1,5 @@
+some stepper motors are noisier than others
+it takes a 2 Nm nema 23 stepper, 1.9 Nm is ok.
+
+
+things are not done as of jan 4 2026, the firmware needs work, the grille, the board schematic and layout also.   The motor and it's coupler and, the blades and the plastic parts are probably done or pretty close.  There may be minor changes to the printable ones.

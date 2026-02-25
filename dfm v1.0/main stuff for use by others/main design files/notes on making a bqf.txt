@@ -1,4 +1,6 @@
 some stepper motors are noisier than others
-it takes a 2 Nm nema 23 stepper, 1.9 Nm is ok.
+it takes a 2 Nm nema 23 stepper, 1.9 Nm is apparently ok as long as it actually is that.
 
-see new document here it's easier to edit and keep up to date as a google doc https://docs.google.com/document/d/1XwCIWP6nqRXSpk52c2E5IwIIcZ5gb02cDRNazFlFf70/edit?usp=sharing
+see new document here it's easier to edit and keep up to date as a google doc
+ https://docs.google.com/document/d/1XwCIWP6nqRXSpk52c2E5IwIIcZ5gb02cDRNazFlFf70/edit?usp=sharing
+
